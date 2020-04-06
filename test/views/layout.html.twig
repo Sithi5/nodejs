@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% block head %}
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+			<title>{% block title %} nodeJS - {% endblock %} </title>
+			{% block stylesheets %}
+				{# CSS Font Navbar #}
+				<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+				{# CSS Font Navbar #}
+				{# social media icons #}
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				{# social media icons #}
+			{% endblock %}
+		{% endblock %}
+		<p>This is head section</p>
+	</head>
+
+	<body>
+		<p>This is body section</p>
+
+		{% block body %}
+		{% endblock %}
+
+	</body>
+		{% block javascripts %}
+
+		{% endblock %}
+	<footer>
+		<p>This is footer section</p>
+		{% block footer %}
+		{% endblock %}
+	</footer>
+</html>
+
